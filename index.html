@@ -4,127 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <title>GaeileMemoryGame</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<header>
-    <div class="page-logo">
-        <div class="row">
-            <div class="col-5" id="header-logo">
-                <a href="index.html"><img src="./assets/images/irishgaeilge.jpg" alt="Irish Gaeilge"></a>
-            </div>
-            <div class="col-7" id="header-title">
-                <a href="index.html">
-                    <h1 class="page-title">Gaeilge for Primary School</h1>
-                </a>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html" id="navbarLogo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars" id="menu-toggle"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html"><i
-                                        class="fas fa-home"></i>Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="game-rules"><i
-                                        class="fas fa-exclamation"></i>Game Rules
-                                </a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html"><i class="fas fa-address-book"></i>Submit
-                                    Feedback</a>
-                            </li>
-                        </ul>
-                        <span class="navbar-text">
-                            Learn the basics of the Irish Language <br>
-                            <button type="button" class="btn btn-warning"><cite><a
-                                        href="https://curriculumonline.ie/Primary/Curriculum-Areas/Primary-Language/?lang=ga-ie">Primary
-                                        School Curriculum Irish
-                                    </a></cite></button>
-                        </span>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-</header>
 
 <body>
+    <header>
+        <div class="page-logo">
+            <div class="row">
+                <div class="col-5" id="header-logo">
+                    <a href="index.html"><img src="/assets/images/gaeilgeirish.jpg" alt="Irish Gaeilge"></a>
+                </div>
 
-    <section class="memory-game">
-        <div class="memory-card" data-framework="books">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/books.jpg" alt="books" />
+                <div class="col-7" id="header-title">
+                    <a href="index.html">
+                        <h1>Gaeilge for Primary School</h1>
+                    </a>
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html" id="navbarLogo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars" id="menu-toggle"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html"><i
+                                            class="fas fa-home"></i>Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="game.html"><i
+                                            class="fas fa-exclamation"></i>Play Game
+                                    </a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html"><i class="fas fa-address-book"></i>Submit
+                                        Feedback</a>
+                                </li>
+                            </ul>
+                            <span class="navbar-text">
+                                Learn the basics of the Irish Language <br>
+                                <button type="button" class="btn btn-warning"><cite><a
+                                            href="https://curriculumonline.ie/Primary/Curriculum-Areas/Primary-Language/?lang=ga-ie">Primary
+                                            School Curriculum Irish
+                                        </a></cite></button>
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-
-        <div class="memory-card" data-framework="books">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/books.jpg" alt="books" />
-        </div>
-
-        <div class="memory-card" data-framework="clog">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
-        </div>
-
-        <div class="memory-card" data-framework="clog">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
-        </div>
-
-        <div class="memory-card" data-framework="doras">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
-        </div>
-
-        <div class="memory-card" data-framework="doras">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
-        </div>
-
-        <div class="memory-card" data-framework="lunchbox">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
-        </div>
-
-        <div class="memory-card" data-framework="lunchbox">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
-        </div>
+    </header>
 
 
 
-        <div class="memory-card" data-framework="muinteoir">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
-        </div>
 
-
-        <div class="memory-card" data-framework="muinteoir">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
-        </div>
-
-        <div class="memory-card" data-framework="pencil">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
-        </div>
-
-        <div class="memory-card" data-framework="pencil">
-            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-            <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
-        </div>
-
-    </section>
 
     <script src="script.js"></script>
 </body>
