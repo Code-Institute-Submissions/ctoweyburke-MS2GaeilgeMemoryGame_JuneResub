@@ -11,6 +11,14 @@
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <title>GaeileMemoryGame</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <!--Email JS submit function below -->
+    <script>
+        (function () {
+            emailjs.init("user_gG4uYYMHcY505pzEYZrI3");
+        })();
+    </script>
 </head>
 
 <body>
@@ -31,8 +39,9 @@
 <div class="row">
     <div class="col-sm-2">
       <ul>
-        <li><button><a href="index.html">Home</a></li></button>
-        <li><button><a href="game.html">Play Game</a></li></button>
+        <li><a href="index.html"><button type="button" class="btn btn-success">Home</button></a></li>
+        <li><a href="game.html"><button type="button" class="btn btn-success">Play Game</button></a></li>
+        
   </ul>
     </div>
 
@@ -65,7 +74,7 @@
                     </div>
                     <div class="form-group">
                         <label for="ContactInputMessage">Please write your Your Message</label>
-                        <textarea class="form-control" id="ContactInputMessage" rows="3" required
+                        <textarea class="form-control" id="ContactInputMessage" rows="5" required
                             name="message"></textarea>
                     </div>
                     <label class="checkbox-bootstrap">                                        
@@ -91,7 +100,7 @@
 </div>
     <script src="script.js"></script>
 </body>
-<footer>
+<footer class="footer-section">
 <a href="http://https://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square size:5x"></i>Gaeilgevibes - Follow on facebook</a>
   
     <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram"></i>Gaeilgevibes - Follow on Instagram</a>
