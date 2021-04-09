@@ -11,8 +11,8 @@ body {
 }
 
 .memory-game {
-    width: 640px;
-    height: 640px;
+    width: 400px;
+    height: 400px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@ body {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-    box-shadow: 1px 1px 1px rgba(0,0,0,3);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 3);
 }
 
 .memory-card:active {
@@ -52,4 +52,4 @@ body {
 
 .front-face {
     transform: rotateY(180deg);
-    }
+}
