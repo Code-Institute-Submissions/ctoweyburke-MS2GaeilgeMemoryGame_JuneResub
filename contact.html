@@ -26,85 +26,89 @@
         <div class="page-logo">
             <div class="row">
                 <div class="col-4" id="header-logo">
-                    <a href="index.html"><img src="assets/images/gaeilgeirish.jpg" alt="Irish Gaeilge"></a>
+                    <a href="index.html"><img src="assets/images/irishflag.jpg" alt="Irish Gaeilge"></a>
                 </div>
                 <div class="col-8">
-                   
-                        <h1 class="header-title">Get in touch!</h1>
+
+                    <h1 class="header-title">Get in touch!</h1>
                     </a>
                 </div>
             </div>
         </div>
     </header>
-<div class="row">
-    <div class="col-sm-2">
-      <ul>
-        <li><a href="index.html"><button type="button" class="btn btn-success">Home</button></a></li>
-        <li><a href="game.html"><button type="button" class="btn btn-success">Play Game</button></a></li>
-        
-  </ul>
-    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <ul>
+                <li><a href="index.html"><button type="button" class="btn btn-outline-success">Home</button></a></li>
+                <li><a href="game.html"><button type="button" class="btn btn-outline-success">Play Game</button></a>
+                </li>
 
-  <div class="col-sm-5">
-        <h3>Contact Us/Submit feedback</h3>
-            
+            </ul>
+        </div>
+
+        <div class="col-sm-5" style="background-color:green">
+
+
             <!-- Contact Form -->
-            
-                <form onsubmit="return sendMail(this);">
-                    <div class="form-group">
-                        <label for="ContactInputName">Your Full Name</label>
-                        <input type="text" class="form-control" id="ContactInputName" required name="name" />
-                    </div>
-                    <div class="form-group">
-                        <label for="ContactInputEmail">Your Email address</label>
-                        <input type="email" class="form-control" id="ContactInputEmail" aria-describedby="emailHelp"
-                            required name="emailaddress" />
-                        <small id="emailHelp" class="form-text text-muted">Information will not be shared with a third party.</small>
-                    </div>
-                    <div class="form-group">
-                        <label class="my-1 mr-2" for="ContactInputEnquiryType">Class year</label>
-                        <select class="form-select my-1 mr-sm-2" id="ContactInputEnquiryType" name="difficulty">
-                            <option selected value="">Please choose...</option>
-                            <option value="Easy">Junior Infants</option>
-                            <option value="Medium">Senior Infants</option>
-                            <option value="Hard">First Class</option>
-                            <option value="Impossible">Second Class</option>
-                            <option value="None of the above">None of the above</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="ContactInputMessage">Please write your Your Message</label>
-                        <textarea class="form-control" id="ContactInputMessage" rows="5" required
-                            name="message"></textarea>
-                    </div>
-                    <label class="checkbox-bootstrap">                                        
-  <input type="checkbox">             
-  <span class="checkbox-placeholder"></span>           
-  Click here to agree to our t&c's.
-</label>
-                    <div class="submit-button">
-                        <button type="submit" class="btn btn-outline-success submit-btn"
-                            onclick="index.html">Submit your message</button>
-                    </div>
-                </form>
-            </div>
 
-  <div class="col-sm-5" id="contact-map">
-                
+            <form onsubmit="return sendMail(this);">
+                <div class="form-group">
+                    <label for="ContactInputName">
+                        <h5>Your Full Name</h5>
+                    </label>
+                    <input type="text" class="form-control" id="ContactInputName" required name="name" />
+                </div>
+                <div class="form-group">
+                    <label for="ContactInputEmail">
+                        <h5>Your Email address</h5>
+                    </label>
+                    <input type="email" class="form-control" id="ContactInputEmail" aria-describedby="emailHelp"
+                        required name="emailaddress" />
+                    <small id="emailHelp" class="form-text text-muted">
+                        <h6>Information will not be shared with a third party.</h6>
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="ContactInputMessage">
+                        <h5>Please write your Your Message</h5>
+                    </label>
+                    <textarea class="form-control" id="ContactInputMessage" rows="7" required name="message"></textarea>
+                </div>
+                <label class="checkbox-bootstrap">
+                    <input type="checkbox">
+                    <span class="checkbox-placeholder"></span>
+                    <h6>Click here to agree to our t&c's.</h6>
+                </label>
+                <div class="submit-button">
+                    <button type="submit" class="btn btn-danger submit-btn" onclick="index.html">Submit your
+                        message</button>
+                    <br>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-5" id="contact-map">
+
             <!-- Google Maps added below -->
-            
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d608212.3927890183!2d-9.432380439957718!3d53.45363118255159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1616450331743!5m2!1sen!2sie" 
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d608212.3927890183!2d-9.432380439957718!3d53.45363118255159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1616450331743!5m2!1sen!2sie"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-     
- 
-</div>
-    <script src="script.js"></script>
+
+
+        </div>
+        <script src="script.js"></script>
 </body>
 <footer class="footer-section">
-<a href="http://https://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square size:5x"></i>Gaeilgevibes - Follow on facebook</a>
-  
-    <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram"></i>Gaeilgevibes - Follow on Instagram</a>
-  
-    <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter"></i>Gaeilgevibes - Follow on twitter</a>
+    <a href="http://https://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square"></i>Gaeilgevibes - Follow
+        on facebook</a>
+
+    <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram"></i>Gaeilgevibes - Follow on
+        Instagram</a>
+
+    <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter"></i>Gaeilgevibes - Follow on
+        twitter</a>
 </footer>
+
 </html>
