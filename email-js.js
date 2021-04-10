@@ -1,9 +1,19 @@
 //---------- Below JS was written with guidance from emailJS tutorial on 
 // Code Institute Sessions & EMailJS instructions on website. //
 
-emailjs.sendForm('service_3jvrzeb', 'template_ho1z60q', 'Learn Gaeilge for Primary School')
-    .then(function(response) {
-       console.log('Thank you for getting in touch', response.status, response.text);
-    }, function(error) {
-       console.log('Seems there has been an error with your submission. Please try again', error);
-    });
+function sendMail(contactForm) {
+    emailjs.send("template_ho1z60q", "Learn Gaeilge for Primary School", {
+            "from_name": contactForm.name.value,
+            "from_email": contactForm.emailaddress.value,
+            "message": contactForm.message.value
+        })
+        .then(
+            function (response) {
+                alert("Thanks for contacting Learn Gaeilge");
+                window.location.replace("/");
+            },
+            function (error) {
+                alert("Whoops! There seems to be a problem. Please try again.");
+            });
+    return false;
+}
