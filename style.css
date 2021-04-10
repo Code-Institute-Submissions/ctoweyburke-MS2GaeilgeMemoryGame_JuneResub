@@ -31,6 +31,7 @@
  background-color: orange;
 }
 
+
 li {
     
   display: block;
@@ -53,10 +54,6 @@ ul {
   padding: 0;
 }
 
-.schoolimg {
- padding-left: 300px;
-}
-
 h2 {
     color: orange;
     font-family: 'Indie Flower', cursive;
@@ -65,7 +62,6 @@ h2 {
     padding-top: 20px;
 }
 /*memory game css*/
-
 
 .memory-game {
     width: 500px;
