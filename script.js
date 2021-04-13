@@ -4,9 +4,40 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+var totalSeconds = 0;
+var timerFunc = null
+var matchCount = 0
+
+function setTime() {
+  document.getElementById('timer').textContent = ++totalSeconds;
+}
+
+function startGame(){
+  if(timerFunc == null){
+    timerFunc = setInterval(setTime, 1000);
+  }
+  cards.forEach(card => card.addEventListener('click', flipCard));
+}
+
+function resetGame(){
+  if(timerFunc != null){
+    clearInterval(timerFunc);
+  }
+  timerFunc = null;
+  totalSeconds = 0;
+  document.getElementById('flips').textContent = 0;
+  document.getElementById('timer').textContent = 0;
+  location.reload()
+}
+
+function increamentFlipCount(){
+  document.getElementById('flips').textContent = parseInt(document.getElementById('flips').textContent) + 1;
+}
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
+  increamentFlipCount()
 
   this.classList.add('flip');
 
@@ -19,6 +50,13 @@ function flipCard() {
 
   secondCard = this;
   checkForMatch();
+  if(matchCount == 6){
+    if(timerFunc != null){
+      clearInterval(timerFunc);
+    }
+    let flips = document.getElementById('flips').textContent
+    document.getElementById('finished_messsage').textContent = "You completed the game in " + totalSeconds + " seconds using " + flips + " flips"
+  }
 }
 
 function checkForMatch() {
@@ -30,7 +68,7 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-
+  document.getElementById('matched').textContent = ++matchCount;
   resetBoard();
 }
 
@@ -56,5 +94,3 @@ function resetBoard() {
     card.style.order = randomPos;
   });
 })();
-
-cards.forEach(card => card.addEventListener('click', flipCard));
