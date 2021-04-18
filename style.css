@@ -120,6 +120,20 @@ h6 {
     transform: rotateY(180deg);
 }
 
+#game-buttons {
+    padding: 30px;
+    padding-bottom: 10%;
+}
+
+
+#finished_messsage {
+    font-family: cursive;
+    color: red;
+    font-stretch: expanded;
+    padding-top: 20px;
+    font-weight: 300;
+}
+
 /* Get in touch page */
 
 form {

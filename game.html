@@ -27,11 +27,12 @@
                 </div>
                 <div class="col-2">
                     <h6 style="color:white">GAEILGE VIBES <br> Follow on Social Media</h6>
-               <nav class="navbar navbar-expand-sm">
-                    <a href="http://https://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square fa-2x"></i></a>
-                    <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter fa-2x"></i></a>
-               </nav>
+                    <nav class="navbar navbar-expand-sm">
+                        <a href="http://https://www.facebook.com/Gaeilgevibes"><i
+                                class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter fa-2x"></i></a>
+                    </nav>
 
 
                 </div>
@@ -121,9 +122,9 @@
 
             </div>
 
-            <div class="col-sm-2">
-
-                 <button onclick="startGame()">Start Game</button>
+            <div class="col-sm-2" id="game-buttons">      
+                <button type="button" onclick="startGame()" class="btn btn-dark">START GAME</button>
+               
 
                 <h4>Timer <label id="timer">0</label></h4>
 
@@ -131,12 +132,14 @@
 
                 <h4># Matched <label id="matched">0</label></h4>
 
-                <button onclick="resetGame()">Reset Game</button>
+                <button type="button" onclick="resetGame()" class="btn btn-warning">Reset Game</button>
+                
+                <h4 id="finished_messsage" class="finished_messsage"></h4>
 
             </div>
             </section>
 
-            <h4 id="finished_messsage" class=".finished_messsage"/>
+            
 
             <script src="script.js"></script>
 </body>
