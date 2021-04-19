@@ -2,7 +2,7 @@
 
 ![Mockup image](wireframes/contacthtml.jpg)
 
-[View live version of website via GitHub Pages](https://
+[View live version of website via GitHub Pages](https://ctoweyburke.github.io/MS2GaeilgeMemoryGame/)
 
 Every young person needs to enjoy learning. The aim of this webpage is to create a fun, engaging memory game to learn some key words in Gaeilge and develop their knowledge. 
 
@@ -92,9 +92,11 @@ Who are we building this website for?
 <a></a>
 #### Expectations
 * When clicking on links (social media links), expect the page to open in a separate browser.
-* Expect feedback when submitting the contact form that the form has been submitted correctly.
-* Expect that the navigation links work properly to take the user where they intended to go to.
+* Expect that the navigation links work properly to take the user where they intended to go to from page to page.
+* Instructions for game - Click on the START Button before game and timer starts.
 * Expect card game to work to match up the correct cards for user to enjoy the game and learning experience. 
+* Expect to get results from your game in terms of the length of time it took you, how many flips also.
+* Expect feedback when submitting the contact form that the form has been submitted correctly.
 * Clear map of our company location.
 
 <a></a>
@@ -112,33 +114,34 @@ this font as opposed to a more modern or office type font. It is easy to read an
 #### Icons
 I used icons from 
 [Font Awesome library] (https://fontawesome.com/ "Font Awesome"). 
-The icons that were used are used to give meaning to a certain section.
+The icons that were used are used to give meaning to a certain section - Social Media Icons that are very familiar to all users. 
 
 <a></a>
 #### Colours
 The colour scheme is based on Ireland/Irish Flag colours. I wanted it to relate to the subject of Gaeilge – Irish language. 
 I used #FFA500 for Orange and #008000 for Green in the project. I did use some other colors as background and 
-#800000 for message that pops up when the game finishes.
+#800000 for message that pops up when the game finishes. 
 
 https://www.w3schools.com/cssref/css_colors.asp
 
 <a></a>
 #### Logo
-I used a logo using an Irish Flag I found on Google images. (assets/images/irishflag.jpg)
+I used a logo using an Irish Flag I found on Google images. (assets/images/irishflag.jpg) 
 
 <a></a>
 ## **Wireframes**
-I have used [Balsamic](https://balsamiq.com/wireframes/) to create low-fidelity wireframes. 
-First I created a basic wireframe for mobile, desktop. 
+I have used [Balsamic](https://balsamiq.com/wireframes/) to create my wireframes. 
+First I created a basic wireframe for mobile & desktop. 
 For my website, I have decided to go for a 3-page website which suits young people to navigate directly to key areas.
-I did feel if I put my webpage all on 1 page it would be over whelming.
+I did feel if I put my webpage all on 1 page it would be over whelming and the user may get lost looking for the game.
 
 The website will be easy to navigate by using the buttons at the side of the page to bring the user to home/game/get in touch page. 
 
 
 <a></a>
 ### Wireframe images:
-#### Low Fidelity -These are both mobile and desktop layouts.
+#### These are both mobile and desktop layouts. So the user can visualise using them on either device. Looking at it completed, I
+feel that this website would be used more by a teacher on a whiteboard - so desktop was the best design.
 - [home page](wireframes/index-homehtml.jpg)
 - [game page](wireframes/gamehtml.jpg)
 - [Get in Touch](wireframes/contacthtml.jpg)
@@ -146,13 +149,30 @@ The website will be easy to navigate by using the buttons at the side of the pag
 <a></a>
 ## **Features**
 - Three Page Site with Home Page, Game Page and Get in touch Page.
-- There is a mobile-first focus and therefore I wanted to keep in mind first what will work on mobile. 
+- This site is designed to be used as a desktop by a teacher in a class so my main design was desktop, then i decided to make it ipad
+responsive also. 
 
-### Navbar
+### Home Page  (Index.html)
 1. Logo - if clicked/ tapped - return to Index.html (Home Page)
+2. Mobile & Tablet - webpages re-size down to fit device.
+3. Desktop - Large screen - User can see 3 pages - Home/Game/Get in touch.
+4. Home Page - Clear instructions to learn the words. Game & Get in touch Button on Screen along with Social Media Links
+5. Large Picture with key words and pictures to aid learners. 
 
+### Game (game.html)
+1. User can click on the START GAME button to start the timer and the game.
+2. Cards are locked and will only turn when the START button is clicked.
+3. Instructions are given to the user to click on the start button to start the game.
+4. A reset button is also available for users to reset if they want to start the game again.
+5. An message will appear when the user matches all the cards to give them information on the time it has taken them, and 
+how many flips also. 
 
-INFO REQUIRED HERE...........................................................
+### Get in Touch (Contact.html) 
+1. A form is available on this page for the user to get in touch.
+2. There is a space for name, email and a message to be submitted.
+3. A submit button is available, and when you click on this an alert message will appear to tell you that you have submitted a message.
+4. A map is also available with the region where this (fictional) company is
+
 
 <a></a>
 ### **Existing Features**
@@ -170,6 +190,10 @@ INFO REQUIRED HERE...........................................................
 - A unique environment for the user where they can sign in with a user name and password so that their information can be saved across devices - will need further skills to implement this feature.
 - A feature to record each attempt and score - will need further skills to implement this feature.
 - Add reCAPTCHA security function in form - will need further skills to implement this feature.
+- Further work required for mobile responsive site as several issues incountered when setting @media screen below 375px.
+- Further topics would be added so the user could chose the subject example - learn irish words, house words, farm animals expect.
+- Clear the form after the user has submitted a message.
+- User to get an email with details of what they have submitted as a message. 
 
 <a></a>
 ## **Technologies used**
@@ -185,7 +209,6 @@ INFO REQUIRED HERE...........................................................
     - The project uses Fontawesome for the icons
 - [Google Fonts](https://fonts.google.com/)
     - The project uses **Google fonts** to style the website fonts.
-
 - [Emailjs API](https://www.emailjs.com/)
     - The project uses an API from **Emailjs** for the contact form.
 - [Google Maps API](https://developers.google.com/maps)
@@ -200,16 +223,40 @@ INFO REQUIRED HERE...........................................................
 <a></a>
 ### **Design**
 - [Balsamiq](https://balsamiq.com/)
-    - To design low fidelity mockups
+    - To design mockups and wireframe
 
 
 <a></a>
 ## **Testing**
 
-Testing information UPDATE UPDATE UPDATE UPDATE
+For this project, the web developer tools built directly into the Google Chrome browser was used to help edit pages 
+and diagnose problems quickly.
+- [W3C Markup Validator](https://validator.w3.org/) 
+Results - 
+(testing/validatorw3results.jpg)
+    - For testing HTML code - some issues noted and addressed.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+    - For testing CSS code
+    Results
+    (testing/w3cCSSvalidation.jpg)
+    -  Issues were identified but related more to the libraries than the CSS I felt?
+- [JSHint Validator](https://jshint.com/)
+    - For detecting errors and potential problems in your JavaScript code
+     Results
+     (testing/email-jstest.jpg) (testing/jsgametest.jpg)
+- [Link Checker](https://validator.w3.org/checklink)
+    - For checking all links on the website and see if all links work. Result - external links not working - but they have
+    been tested and are working myside.
+    Results
+    (testing/linkstests.jpg)
+- Lighthouse in Google dev tool
+    - For testing the performance of the website
+    Results - (testing/lighthousetest.jpg)
 
 
-a></a>
+
+
+<a></a>
 ## **Deployment**
 
 This project was developed using the [Gitpod IDE](https://www.gitpod.io/), 
@@ -294,7 +341,7 @@ Connecting to EmailJS
 ## **Credits**
 
 ### Content
-- The copy and text for this website was created by Claire Burke
+- The idea and text for this website was created by Claire Burke, owner of the site.
 
 ### Media 
 - Images used are from [google](https://www.google.com/ "Google images")
@@ -303,10 +350,9 @@ Connecting to EmailJS
 -
 
 ### Acknowledgements
-- Thanks to my mentor Gerry for guiding me through this project. 
-He helped to brainstorm about the project and what was achievable. 
+- Thanks to my mentor Gerry for guiding me through this project. He helped to brainstorm about the project and what was achievable. 
 
-Thanks to my brother Ian, who guided me through emailjs – API and answering several questions I had
+- Thanks to my brother Ian, who guided me through emailjs – API and answering several questions I had
 through this process.
 
 
