@@ -1,3 +1,6 @@
+//Javascript for Memory Game - followed tutorial by https://marina-ferreira.github.io/tutorials/js/memory-game/
+
+//Memory Cards Variables
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
@@ -8,10 +11,12 @@ var totalSeconds = 0;
 var timerFunc = null
 var matchCount = 0
 
+//Function set time
 function setTime() {
   document.getElementById('timer').textContent = ++totalSeconds;
 }
 
+//Function START GAME
 function startGame(){
   if(timerFunc == null){
     timerFunc = setInterval(setTime, 1000);
@@ -19,6 +24,7 @@ function startGame(){
   cards.forEach(card => card.addEventListener('click', flipCard));
 }
 
+//Function to RESET GAME
 function resetGame(){
   if(timerFunc != null){
     clearInterval(timerFunc);
@@ -30,10 +36,12 @@ function resetGame(){
   location.reload()
 }
 
+//Function INCREASE FLIP COUNTER
 function increamentFlipCount(){
   document.getElementById('flips').textContent = parseInt(document.getElementById('flips').textContent) + 1;
 }
 
+//Function to FLIP CARDS
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -59,6 +67,7 @@ function flipCard() {
   }
 }
 
+//Function CHECK FOR CARDS MATCH
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
@@ -72,6 +81,7 @@ function disableCards() {
   resetBoard();
 }
 
+//Function TO UNFLIP CARDS
 function unflipCards() {
   lockBoard = true;
 
@@ -83,11 +93,13 @@ function unflipCards() {
   }, 1500);
 }
 
+//Function TO RESET BOARD
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
 
+//Function TO SHUFFLE CARDS so they are in different locations each time
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
