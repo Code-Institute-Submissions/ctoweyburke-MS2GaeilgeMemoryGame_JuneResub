@@ -341,13 +341,21 @@ Connecting to EmailJS
 ## **Credits**
 
 ### Content
-- The idea and text for this website was created by Claire Burke, owner of the site.
+- The idea and text for this website was created by Claire Burke, owner of the site. 
+- With a background in teaching and having children, learning IRISH is a challenge so I wanted to create 
+a medium through which my children would like to learn, enjoy and have fun.
 
 ### Media 
 - Images used are from [google](https://www.google.com/ "Google images")
 
 ### Code
--
+- HTML for the navbar and form originally taken from Bootstrap with modifications for this project.
+- Some HTML written using Bootstrap, others writen by owner.
+- CSS for social links from Code Institute Rosie Project
+- JS for game based on tutorial by https://marina-ferreira.github.io/tutorials/js/memory-game/. 
+- JS for Start Game/Timer/Reset - written by C Burke with tutorial from https://www.w3schools.com/
+- JS for email (API) written with tutorial by Code Institute 
+- JS for google maps (API) written with tutorial by Code Institute.
 
 ### Acknowledgements
 - Thanks to my mentor Gerry for guiding me through this project. He helped to brainstorm about the project and what was achievable. 
