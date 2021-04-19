@@ -2,7 +2,7 @@
 
 ![Mockup image](wireframes/contacthtml.jpg)
 
-[View live version of website via GitHub Pages](
+[View live version of website via GitHub Pages](https://
 
 Every young person needs to enjoy learning. The aim of this webpage is to create a fun, engaging memory game to learn some key words in Gaeilge and develop their knowledge. 
 
@@ -116,9 +116,11 @@ The icons that were used are used to give meaning to a certain section.
 
 <a></a>
 #### Colours
-The colour scheme is based on Ireland/Irish Flag colours. I wanted it to relate to the subject of Gaeilge – Irish language. I used 
+The colour scheme is based on Ireland/Irish Flag colours. I wanted it to relate to the subject of Gaeilge – Irish language. 
+I used #FFA500 for Orange and #008000 for Green in the project. I did use some other colors as background and 
+#800000 for message that pops up when the game finishes.
 
-COLOR SCHEME TO BE ADDED HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+https://www.w3schools.com/cssref/css_colors.asp
 
 <a></a>
 #### Logo
