@@ -10,65 +10,43 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <title>GaeilgeMemoryGame</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="page-logo">
-            
-            <div class="row ">
-                <div class="col-3" id="header-logo">
-                    <a href="index.html"><img src="assets/images/irishflag.jpg" alt="Irish Gaeilge"></a>
-                </div>
-                <div class="col-7">
-                    <h1 class="header-title">Gaeilge for Primary School</h1>
-                    
-                </div>
-                
-                <div class="col-2">
-                        
-                    <h6 style="color:white">GAEILGE VIBES <br> Follow on Social Media</h6>
-                    <nav class="navbar navbar-expand-sm">
-                        <a href="http://https://www.facebook.com/Gaeilgevibes" target="_blank"><i
-                                class="fab fa-facebook-square fa-2x"></i></a>
-                        <a href="https://www.instagram.com/gaeilgevibes/" target="_blank"><i
-                                class="fab fa-instagram fa-2x"></i></a>
-                        <a href="http://https://www.twitter.com/Gaeilgevibes" target="_blank"><i
-                                class="fab fa-twitter fa-2x"></i></a>
-                    </nav>
-
-
-                </div>
-            </div>
-    </header>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-2" style="background-color:white">
-
-                <ul>
-                    <li><a href="index.html"><button type="button" class="btn btn-outline-success">Home</button></a>
-                    </li>
-                    <li><a href="game.html"><button type="button" class="btn btn-outline-success">Play Game</button></a>
-                    </li>
-                    <li><a href="contact.html"><button type="button" class="btn btn-outline-success">Get in
-                                touch!</button></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-sm-10" style="background-color:green">
-                <h2>Learn the words - then play the Memory Game!</h2>
-                <img src="assets/images/schoolwords.jpg" alt="schoolwords" style="max-width:75%;height:auto;"
-                    class="mx-auto d-block" />
-
-            </div>
+    <nav class="navbar">
+        <div class="brand-title">Gaeilge for Primary School</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="game.html">Play Game</a></li>
+                <li><a href="contact.html">Get in Touch!</a></li>
+            </ul>
         </div>
+    </nav>
+
+
+    <div class="main">
+        <h2>Learn the words - play the Memory Game!</h2>
+        <img class="hero-image" src="assets/images/schoolwords.jpg" alt="schoolwords" class="mx-auto d-block" />
     </div>
 
-    <script src="assets/js/script.js"></script>
-    
+    <div class="social-media">
+                    <h6 style="color:green">GAEILGE VIBES <br> Follow on Social Media</h6>
+                    <nav class="navbar navbar-expand-sm">
+                        <a href="http://https://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square fa-2x"
+                                target="_blank"></i></a>
+                        <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram fa-2x"
+                                target="_blank"></i></a>
+                        <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter fa-2x"
+                                target="_blank"></i></a>
+                    </nav>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

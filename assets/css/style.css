@@ -1,375 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital@0;1&display=swap');
-
-
-/* index page styling ---------------------------- */
-.page-logo {
-    height: 20vh;
-    width: auto;
+* {
+    box-sizing: border-box;
 }
 
-#header-logo {
-
-    justify-content: right;
-    padding-left: 80px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.header-title {
-    vertical-align: right;
-    font-style: italic;
-    padding-top: 20px;
-    padding-right: 30px;
-    font-family: 'Indie Flower', cursive;
-    font-weight: solid;
-    font-weight: 800;
-    font-size: 60px;
-    letter-spacing: 3px;
-    color: green;
-    background-color: orange;
-}
-
-.page-logo {
-    background-color: orange;
-}
-
-
-
-li {
-
-    display: block;
-    float: centre;
-    border-radius: 25px;
-}
-
-a {
-    display: block;
-    padding: 20px;
-    color: green;
-    font-size: 20px;
-    font-weight: 800;
-    border-radius: 25px;
-}
-
-ul {
-    list-style-type: none;
+body {
     margin: 0;
     padding: 0;
 }
 
-h2 {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
     color: orange;
+}
+
+.brand-title {
+    font-size: 3.5rem;
+    margin: .5rem;
     font-family: 'Indie Flower', cursive;
-    padding-left: 300px;
-    font-weight: 600;
-    padding-top: 20px;
+    font-weight: 500;
 }
 
-h6 {
-    color: white;
-    padding-top: 10px;
-    font-weight: 600;
-    font-family: cursive;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-
-/*memory game page styling ------------------------------------*/
-
-.memory-game {
-    width: 500px;
-    height: 500px;
-    margin: auto;
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    perspective: 700px;
 }
 
-.memory-card {
-    width: calc(25% - 10px);
-    height: cacl(33.333% - 10px);
-    margin: 5px;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 3);
+.navbar-links li {
+    list-style: none;
 }
 
-.memory-card:active {
-    transform: scale(.97);
-    transition: transform .2s;
-}
-
-.memory-card.flip {
-    transform: rotateY(180deg);
-}
-
-.front-face,
-.back-face {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-    border-radius: 5px;
-    background: orange;
+.navbar-links li a {
+    text-decoration: none;
     color: orange;
-    backface-visibility: hidden;
-}
-
-.front-face {
-    transform: rotateY(180deg);
-}
-
-#game-buttons {
-    padding: 35px;
-    padding-bottom: 10%;
-}
-
-h5 {
-    color: red;
-}
-
-
-#finished_messsage {
+    padding: 1rem;
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
     font-family: cursive;
-    color: red;
-    font-stretch: expanded;
-    padding-top: 20px;
-    font-weight: 300;
 }
 
-/* Get in touch page */
 
-form {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 0px 5px 0px #ffffff;
-    padding: 25px 25px 25px;
-    padding-top: 25px;
-    margin-bottom: 25px;
-    border-radius: 2%;
-    font-family: cursive;
-    margin-top: 25px;
+.navbar-links li:hover {
+    background-color: white;
 }
 
-iframe {
-    padding-top: 25px;
-    border-radius: 2%;
-    width: 95%;
-    height: 550px;
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-@media screen and (max-width: 767px) {
-    .page-logo {
-        height: 3vh;
-        width: auto;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .toggle-button {
+        display: flex;
     }
 
-    #header-logo {
-
-        justify-content: right;
-        padding-left: 2px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+    .navbar-links {
+        /*display: none;*/
+        width: 100%;
     }
 
-    .header-title {
-        font-style: italic;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .brand-title {
+        font-size: 1.5rem;
+        margin: .5rem;
         font-family: 'Indie Flower', cursive;
         font-weight: 300;
-        font-size: 6px;
-        letter-spacing: 1px;
-        color: #008000;
-        background-color: #FFA500;
     }
 
-    .page-logo {
-        background-color: #FFA500;
-    }
-
-
-
-    li {
+    .navbar-links li a {
+        text-decoration: none;
+        color: orange;
+        padding: 1rem;
         display: block;
-        float: centre;
-        border-radius: 1px;
-    }
-
-    a {
-        display: block;
-        color: green;
-        font-size: 2px;
-        font-weight: 800;
-        border-radius: 2px;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    h2 {
-        color: #FFA500;
-        font-family: 'Indie Flower', cursive;
-        font-weight: 600;
-        font-size: 3px;
-    }
-
-    h6 {
-        color: #FAFAFA;
-        font-weight: 600;
+        font-size: 15px;
+        font-weight: 400;
         font-family: cursive;
-        margin-bottom: 2px;
-        font-size: 4px;
     }
 }
-
-@media screen and (max-width: 375px) {
-    .page-logo {
-        height: 1vh;
-        width: auto;
-        background-color: #FFA500;
-    }
-
-    #header-logo {
-
-        justify-content: right;
-        
-    }
-
-    .header-title {
-        font-style: italic;
-        font-family: 'Indie Flower', cursive;
-        font-weight: 300;
-        font-size: 2px;
-        
-        color: #008000;
-        background-color: #FFA500;
-    }
-
-    
-    li {
-        display: block;
-        float: centre;
-        border-radius: 1px;
-    }
-
-    a {
-        display: block;
-        color: green;
-        font-size: 1px;
-        font-weight: 200;
-        border-radius: 2px;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    h2 {
-        color: #FFA500;
-        font-family: 'Indie Flower', cursive;
-        font-weight: 200;
-        font-size: 10px;
-    }
-
-    h6 {
-        color: #FAFAFA;
-        font-weight: 200;
-        font-family: cursive;
-        margin-bottom: 2px;
-        font-size: 16px;
-    }
-
-    /*memory game page styling ------------------------------------*/
-
-.memory-game {
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    perspective: 300px;
-}
-
-.memory-card {
-    width: calc(25% - 10px);
-    height: cacl(33.333% - 10px);
-    margin: 2px;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 3);
-}
-
-.memory-card:active {
-    transform: scale(.97);
-    transition: transform .2s;
-}
-
-.memory-card.flip {
-    transform: rotateY(180deg);
-}
-
-.front-face,
-.back-face {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-    border-radius: 3px;
-    background: orange;
-    color: orange;
-    backface-visibility: hidden;
-}
-
-.front-face {
-    transform: rotateY(180deg);
-}
-
-#game-buttons {
-    padding: 5px;
-    padding-bottom: 5%;
-}
-
-h5 {
-    color: red;
-}
-
-
-#finished_messsage {
-    font-family: cursive;
-    color: red;
-    font-stretch: expanded;
-    padding-top: 5px;
-    font-weight: 300;
-}
-
-/* Get in touch page */
-
-form {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 0px 5px 0px #ffffff;
-    padding: 5px 5px 5px;
-    padding-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 1%;
-    font-family: cursive;
-    margin-top: 5px;
-}
-
-iframe {
-    padding-top: 5px;
-    border-radius: 2%;
-    width: 95%;
-    height: 200px;
-}
-
-}
-
