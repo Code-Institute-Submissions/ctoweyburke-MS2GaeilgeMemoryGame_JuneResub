@@ -38,40 +38,26 @@
 
 <body>
     <header>
-        <div class="page-logo">
-            <div class="row">
-                <div class="col-4" id="header-logo">
-                    <a href="index.html"><img src="assets/images/irishflag.jpg" alt="Irish Gaeilge"></a>
-                </div>
-                <div class="col-6">
-                    <h1 class="header-title">Get in touch!</h1>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <h6 style="color:white">GAEILGE VIBES <br> Follow on Social Media</h6>
-                    <nav class="navbar navbar-expand-sm">
-                        <a href="http://https://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square fa-2x"
-                                target="_blank"></i></a>
-                        <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram fa-2x"
-                                target="_blank"></i></a>
-                        <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter fa-2x"
-                                target="_blank"></i></a>
-                    </nav>
-                </div>
+        <nav class="navbar">
+            <div class="brand-title">Get in Touch with us!</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="game.html">Play Game</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
     <div class="row">
-        <div class="col-sm-2">
-            <ul>
-                <li><a href="index.html"><button type="button" class="btn btn-outline-success">Home</button></a></li>
-                <li><a href="game.html"><button type="button" class="btn btn-outline-success">Play Game</button></a>
-                </li>
-            </ul>
-        </div>
+        
 
-        <div class="col-sm-5" style="background-color:green">
+        <div class="col-sm-6" >
 
             <form id="contact-form">
                 <input type="hidden" name="contact_number">
@@ -85,13 +71,13 @@
                 <br>
                 <label>Message</label>
                 <br>
-                <textarea rows="5" name="message"></textarea>
+                <textarea rows="8" name="message"></textarea>
                 <br>
                 <input type="submit" value="Submit">
 
             </form>
         </div>
-        <div class="col-sm-5" id="contact-map">
+        <div class="col-sm-6" id="contact-map">
 
             <!-- Google Maps added below -->
 
@@ -101,7 +87,15 @@
         </div>
 
     </div>
+<div class="social-media">
+        <h6 style="color:green">GAEILGE VIBES <br> Follow on Social Media</h6>
 
+        <a href="http://https://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square fa-2x"
+                target="_blank"></i></a>
+        <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram fa-2x" target="_blank"></i></a>
+        <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter fa-2x" target="_blank"></i></a>
+
+    </div>
     <script src="assets/js/email-js.js"></script>
 </body>
 

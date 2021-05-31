@@ -14,136 +14,120 @@
 </head>
 
 <body>
-    <header>
-        <div class="page-logo">
-            <div class="row">
-                <div class="col-3" id="header-logo">
-                    <a href="index.html"><img src="assets/images/irishflag.jpg" alt="Irish Gaeilge"></a>
-                </div>
-                <div class="col-7">
-
-                    <h1 class="header-title">Play the memory game!!</h1>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <h6 style="color:white">GAEILGE VIBES <br> Follow on Social Media</h6>
-                    <nav class="navbar navbar-expand-sm">
-                        <a href="http://https://www.facebook.com/Gaeilgevibes" target="_blank"><i
-                                class="fab fa-facebook-square fa-2x"></i></a>
-                        <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram fa-2x" target="_blank"></i></a>
-                        <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter fa-2x" target="_blank"></i></a>
-                    </nav>
-
-
-                </div>
-            </div>
+    <nav class="navbar">
+        <div class="brand-title">Gaeilge Memory Game</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Get in Touch!</a></li>
+            </ul>
         </div>
-    </header>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-2">
-                <ul>
-                    <li><a href="index.html"><button type="button" class="btn btn-outline-success">Home</button></a>
-                    </li>
-                    <li><a href="contact.html"><button type="button" class="btn btn-outline-success">Get in
-                                touch!</button></a>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="col-sm-8" style="background-color:green">
-
-                <h2>Match up the cards against the timer!</h2>
-
-                <section class="memory-game">
-                    <div class="memory-card" data-framework="books">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/books.jpg" alt="books" />
-                    </div>
-
-                    <div class="memory-card" data-framework="books">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/books.jpg" alt="books" />
-                    </div>
-
-                    <div class="memory-card" data-framework="clog">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
-                    </div>
-
-                    <div class="memory-card" data-framework="clog">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
-                    </div>
-
-                    <div class="memory-card" data-framework="doras">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
-                    </div>
-
-                    <div class="memory-card" data-framework="doras">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
-                    </div>
-
-                    <div class="memory-card" data-framework="lunchbox">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
-                    </div>
-
-                    <div class="memory-card" data-framework="lunchbox">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
-                    </div>
+    </nav>
 
 
+    <div class="col-sm-8" style="background-color:white">
 
-                    <div class="memory-card" data-framework="muinteoir">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
-                    </div>
+        <h2>Match up the cards against the timer!</h2>
 
-
-                    <div class="memory-card" data-framework="muinteoir">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
-                    </div>
-
-                    <div class="memory-card" data-framework="pencil">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
-                    </div>
-
-                    <div class="memory-card" data-framework="pencil">
-                        <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                        <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
-                    </div>
-
+        <section class="memory-game">
+            <div class="memory-card" data-framework="books">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/books.jpg" alt="books" />
             </div>
 
-            <div class="col-sm-2" id="game-buttons">      
-
-                <h5> Click on the start button below to start your game!!</h5>
-                <button type="button" onclick="startGame()" class="btn btn-dark">START GAME</button>
-               
-
-                <h4>Timer <label id="timer">0</label></h4>
-
-                <h4>Flips <label id="flips">0</label></h4>
-
-                <h4># Matched <label id="matched">0</label></h4>
-
-                <button type="button" onclick="resetGame()" class="btn btn-warning">Reset Game</button>
-                
-                <h4 id="finished_messsage" class="finished_messsage"></h4>
-
+            <div class="memory-card" data-framework="books">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/books.jpg" alt="books" />
             </div>
-            </section>
 
-            
+            <div class="memory-card" data-framework="clog">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
+            </div>
 
-            <script src="assets/js/script.js"></script>
+            <div class="memory-card" data-framework="clog">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
+            </div>
+
+            <div class="memory-card" data-framework="doras">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
+            </div>
+
+            <div class="memory-card" data-framework="doras">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
+            </div>
+
+            <div class="memory-card" data-framework="lunchbox">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
+            </div>
+
+            <div class="memory-card" data-framework="lunchbox">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
+            </div>
+
+
+
+            <div class="memory-card" data-framework="muinteoir">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
+            </div>
+
+
+            <div class="memory-card" data-framework="muinteoir">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
+            </div>
+
+            <div class="memory-card" data-framework="pencil">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
+            </div>
+
+            <div class="memory-card" data-framework="pencil">
+                <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
+            </div>
+
+    </div>
+
+    <div class="col-sm-2" id="game-buttons">
+
+        <h5> Click on the start button below to start your game!!</h5>
+        <button type="button" onclick="startGame()" class="btn btn-dark">START GAME</button>
+
+
+        <h4>Timer <label id="timer">0</label></h4>
+
+        <h4>Flips <label id="flips">0</label></h4>
+
+        <h4># Matched <label id="matched">0</label></h4>
+
+        <button type="button" onclick="resetGame()" class="btn btn-warning">Reset Game</button>
+
+        <h4 id="finished_messsage" class="finished_messsage"></h4>
+
+    </div>
+    </section>
+    <div class="social-media">
+        <h6 style="color:green">GAEILGE VIBES <br> Follow on Social Media</h6>
+
+        <a href="http://https://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square fa-2x"
+                target="_blank"></i></a>
+        <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram fa-2x" target="_blank"></i></a>
+        <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter fa-2x" target="_blank"></i></a>
+
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
