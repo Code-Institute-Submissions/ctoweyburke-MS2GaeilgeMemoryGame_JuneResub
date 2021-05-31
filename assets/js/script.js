@@ -1,4 +1,4 @@
-//Javascript for Hamburger Menu - followed tutorial by https://marina-ferreira.github.io/tutorials/js/memory-game/
+//Javascript for Hamburger Menu - followed tutorial by 
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
