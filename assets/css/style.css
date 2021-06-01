@@ -71,6 +71,7 @@ h2 {
     color: green;
     text-align: center;
     font-family: cursive;
+    font-weight: 300;
 }
 
 .hero-image {
@@ -149,6 +150,19 @@ h6 {
     transform: rotateY(180deg);
 }
 
+#game-instructions {
+    font-family: cursive;
+    font-size: 30px;
+    font-style: italic;
+    color: green;
+}
+
+.game-results {
+    color: red;
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
 .front-face,
 .back-face {
     width: 100%;
@@ -170,31 +184,34 @@ h6 {
     padding-bottom: 10%;
 }
 
-h5 {
-    color: red;
-}
+
 
 #finished_messsage {
     font-family: cursive;
-    color: red;
+    color: green;
     font-stretch: expanded;
     padding-top: 20px;
     font-weight: 300;
+    
 }
 
 /* Get in touch page */
 
 form {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: grey;
     box-shadow: 0px 0px 5px 0px #ffffff;
     padding: 25px 25px 25px;
-    padding-top: 25px;
     margin-bottom: 10px;
-    border-radius: 60%;
+    border-radius: 20%;
     font-family: cursive;
     margin-top: 25px;
     display: inline-flexbox;
     text-align: center;
+}
+
+.label{
+    font-size: 20px;
+    font-weight: 600;
 }
 
 iframe {
@@ -259,8 +276,8 @@ iframe {
     }
 
     .hero-image {
-        width: 70%;
-        height: 150px;
+        width: 90%;
+        height: 200px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -270,6 +287,7 @@ iframe {
         color: green;
         text-align: center;
         font-family: cursive;
+        font-size: 16px;
     }
 
     .social-media {
@@ -301,7 +319,7 @@ iframe {
 
     .memory-game {
         width: 350px;
-        height: 350px;
+        height: 200px;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
@@ -309,8 +327,8 @@ iframe {
     }
 
     .memory-card {
-        width: calc(25% - 10px);
-        height: cacl(33.333% - 10px);
+        width: calc(25% - 40px);
+        height: cacl(33.333% - 80px);
         margin: 2px;
         position: relative;
         transform: scale(1);
@@ -345,9 +363,24 @@ iframe {
     }
 
     #game-buttons {
-        padding: 35px;
-        padding-bottom: 10%;
+        padding: 15px;
+        padding-bottom: 2%;
     }
+
+    #game-instructions {
+    font-family: cursive;
+    font-size:20px;
+    font-style: italic;
+    color: green;
+    text-align: center;
+}
+
+.game-results {
+    color: red;
+    margin: 5px;
+    margin-bottom: 0px;
+    float: left;
+}
 
     h5 {
         color: red;
