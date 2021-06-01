@@ -72,6 +72,7 @@ h2 {
     text-align: center;
     font-family: cursive;
     font-weight: 300;
+    padding-top: 1.5rem;
 }
 
 .hero-image {
@@ -159,7 +160,7 @@ h6 {
 
 .game-results {
     color: red;
-    margin: 30px;
+    margin: 10px;
     margin-bottom: 0px;
 }
 
@@ -192,7 +193,7 @@ h6 {
     font-stretch: expanded;
     padding-top: 20px;
     font-weight: 300;
-    
+
 }
 
 /* Get in touch page */
@@ -209,7 +210,7 @@ form {
     text-align: center;
 }
 
-.label{
+.label {
     font-size: 20px;
     font-weight: 600;
 }
@@ -270,7 +271,7 @@ iframe {
         color: orange;
         padding: .5rem;
         display: block;
-        font-size: .5rem;
+        font-size: 20px;
         font-weight: 400;
         font-family: cursive;
     }
@@ -281,13 +282,17 @@ iframe {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 10px;
     }
 
     h2 {
+
         color: green;
         text-align: center;
         font-family: cursive;
-        font-size: 16px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .social-media {
@@ -368,19 +373,19 @@ iframe {
     }
 
     #game-instructions {
-    font-family: cursive;
-    font-size:20px;
-    font-style: italic;
-    color: green;
-    text-align: center;
-}
+        font-family: cursive;
+        font-size: 20px;
+        font-style: italic;
+        color: green;
+        text-align: center;
+    }
 
-.game-results {
-    color: red;
-    margin: 5px;
-    margin-bottom: 0px;
-    float: left;
-}
+    .game-results {
+        color: red;
+        margin: 5px;
+        margin-bottom: 0px;
+        float: left;
+    }
 
     h5 {
         color: red;
