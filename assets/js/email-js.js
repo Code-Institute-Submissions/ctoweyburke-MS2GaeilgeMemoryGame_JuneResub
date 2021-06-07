@@ -7,7 +7,7 @@ function sendMail(contactForm) {
             "from_email": contactForm.emailaddress.value,
             "message": contactForm.message.value
         })
-        .then(
+       .then(
             function (response) {
                 alert("Thanks for contacting Learn Gaeilge");
                 window.location.replace("/");
@@ -16,4 +16,6 @@ function sendMail(contactForm) {
                 alert("Whoops! There seems to be a problem. Please try again.");
             });
     return false;
+          
+
 }

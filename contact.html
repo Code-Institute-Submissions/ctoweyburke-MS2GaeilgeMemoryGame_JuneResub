@@ -53,64 +53,110 @@
             </div>
         </nav>
     </header>
+    <div class="overflow:auto" >
+        <div class="row align-items-start">
+            <div class="col">
+                <form id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <label>Name</label>
+                    <br>
+                    <input type="text" name="user_name" placeholder="Your full name">
+                    <br>
+                    <label>Email</label>
+                    <br>
+                    <input type="email" name="user_email" placeholder="Your email address">
+                    <br>
+                    <label>Message</label>
+                    <br>
+                    <textarea rows="6" name="message" placeholder="Please type your message in here. "></textarea>
+                    <br>
+                    <input id="submit-button" type="submit" value="Submit Message">
 
-    <div class="row">
-        
+                </form>
+            </div>
+            <div class="col" id="contact-info">
+                <h4> <em>Company Name</em> - GaeligeVibes</h4>
 
-        <div class="col-sm-6" >
+                    <h5> <em>Location</em> Galway City, Co. Galway</h5>
+                    <br>
+                    <br>
+                        <h5><em>Contact us</em>
+                            <br>Using Contact form or via email info@gaeilgevibes.ie. 
+                            <br>Phone number - 091 453876 </h5>
+                    <br>
+                    <br>
+                            <p>We deal with companies and schools that are looking for bespoke online resources. We can
+                                create website, add on to websites and games
+                                as tools to create a more engaging learning environment for young people & adults to
+                                learn our native langugage.
+                            </p>
 
-            <form id="contact-form">
-                <input type="hidden" name="contact_number">
-                <label>Name</label>
-                <br>
-                <input type="text" name="user_name">
-                <br>
-                <label>Email</label>
-                <br>
-                <input type="email" name="user_email">
-                <br>
-                <label>Message</label>
-                <br>
-                <textarea rows="8" name="message"></textarea>
-                <br>
-                <input type="submit" value="Submit">
 
-            </form>
+
+            </div>
         </div>
-        <div class="col-sm-6" id="contact-map">
+            <div class="col">
+                <!-- Google Maps added below -->
+                <div class="col-6" id="map">
+                    <script>
+                        function initMap() {
+                //map options 
+                            var options = {
+                                zoom: 8,
+                                center: {
+                                    lat: 53.2648,
+                                    lng: -8.9297
+                                }
+                            }
 
-            <!-- Google Maps added below -->
+                            //new map
+                            var map = new
+                            google.maps.Map(document.getElementById('map'), options);
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d608212.3927890183!2d-9.432380439957718!3d53.45363118255159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1616450331743!5m2!1sen!2sie"
-                allowfullscreen="" loading="eager"></iframe>
+                            
+                            //add marker
+                            var marker = new google.maps.Marker({
+                                position: {
+                                    lat: 53.2707,
+                                    lng: -9.0568
+                                },
+                                map: map
+                                });
+                            
+                            var infoWindow = new google.maps.InfoWindow({
+                                    content: '<h4>Head Office</h4>'
+                                });
+                                marker. addListener('click', function (){
+                                    infoWindow.open(map, marker);
+                                });
+
+                                                       }
+                    </script>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6XZERyl6moWEl5t5Y7AXPSzvtQ0LJ7JY&callback=initMap"
+                        type="text/javascript"></script>
+
+
+                </div>
+            </div>
         </div>
-<div class="contact-info">
-<h4> Company Name - GaeligeVibes</h2>
 
-<h5> Location - Galway City & Oranmore, Co. Galway</h2>
+   
 
-<h5> Contact us - Using Contact form or via email info@gaeilgevibes.ie. Phone number - 091 453876 </h3>
+            <div class="container-fluid" id="social-media">
+                <h6 style="color:green">GAEILGE VIBES <br> Follow on Social Media</h6>
 
-<p>We deal with companies and schools that are looking for bespoke online resources. We can create website, add on to websites and games 
-    as tools to create a more engaging learning environment for young people & adults to learn our native langugage.
-</p>
+                <a href="http://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square fa-2x"
+                        target="_blank"></i></a>
+                <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram fa-2x"
+                        target="_blank"></i></a>
+                <a href="http://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter fa-2x"
+                        target="_blank"></i></a>
 
-
-
-</div>
-    </div>
-<div class="social-media">
-        <h6 style="color:green">GAEILGE VIBES <br> Follow on Social Media</h6>
-
-        <a href="http://https://www.facebook.com/Gaeilgevibes"><i class="fab fa-facebook-square fa-2x"
-                target="_blank"></i></a>
-        <a href="https://www.instagram.com/gaeilgevibes/"><i class="fab fa-instagram fa-2x" target="_blank"></i></a>
-        <a href="http://https://www.twitter.com/Gaeilgevibes"><i class="fab fa-twitter fa-2x" target="_blank"></i></a>
-
-    </div>
-    <script src="assets/js/email-js.js"></script>
-    <script src="assets/js/script.js"></script>
+            </div>
+            <script src="assets/js/email-js.js"></script>
+            <script src="assets/js/script.js"></script>
+            
 </body>
 
 </html>
