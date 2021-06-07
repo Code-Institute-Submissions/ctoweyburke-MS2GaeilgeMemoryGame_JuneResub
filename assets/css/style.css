@@ -22,6 +22,7 @@ body {
     margin: .5rem;
     font-family: 'Indie Flower', cursive;
     font-weight: 500;
+
 }
 
 .navbar-links ul {
@@ -83,8 +84,11 @@ h2 {
     margin-right: auto;
 }
 
-.social-media {
+#social-media {
     background-color: orange;
+    width: 100%;
+    
+    
 }
 
 h6 {
@@ -95,11 +99,11 @@ h6 {
     font-size: 30px;
 }
 
-.social-media i {
-    padding: 5px;
+#social-media i {
+    padding: 2px;
 }
 
-.social-media a {
+#social-media a {
     display: inline-block;
     width: 32%;
     text-align: center;
@@ -111,7 +115,7 @@ h6 {
     margin-right: 5px;
 }
 
-.social-media a:hover {
+#social-media a:hover {
     background-color: white;
 }
 
@@ -201,38 +205,65 @@ h6 {
 form {
     background-color: grey;
     box-shadow: 0px 0px 5px 0px #ffffff;
-    padding: 25px 25px 25px;
+    padding: 20px 20px 20px;
     margin-bottom: 10px;
-    border-radius: 20%;
+    border-radius: 10%;
     font-family: cursive;
     margin-top: 25px;
     display: inline-flexbox;
     text-align: center;
 }
 
-.label {
+label {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
+    color: orange;
+    margin-bottom: 5px;
+      }
+
+#submit-button {
+    padding: 5px;
+    font-size: 20px;
+    background: orange;
+    border: 1px solid orange;
+    border-radius: 20px;
+    transition: all 2s;
 }
 
-iframe {
-    padding-top: 25px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    border-radius: 4%;
-    width: 80%;
+#submit-button:hover {
+    background-color: green;
+    border: white;
+    color: black;
+}
+
+#contact-info {
+    width: 100%;
+    padding-top: 20px;
+    color: green;
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    font-size: 12px;
+    font-style: italic;
+}
+
+#map {
+    margin-top: 20px;
     height: 400px;
+    width: 100%;
 }
 
 /* -------------------------------Media Queries 425 pxl max - I-Phone 6 and up ------------------------*/
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     .toggle-button {
         display: flex;
     }
 
     .navbar-links {
-        /*display: none;*/
+        display: none;
         width: 100%;
     }
 
@@ -260,10 +291,12 @@ iframe {
     }
 
     .brand-title {
+        padding-top: 10px;
         font-size: 2rem;
         margin: .5rem;
         font-family: 'Indie Flower', cursive;
         font-weight: 300;
+        text-align: center;
     }
 
     .navbar-links li a {
@@ -295,30 +328,29 @@ iframe {
         margin-bottom: 10px;
     }
 
-    .social-media {
+    #social-media {
         width: 100%;
         overflow: auto;
     }
 
-    .social-media i {
-        padding: 10px;
+    #social-media i {
+        padding: 5px;
     }
 
-    .social-media a {
+    #social-media a {
         float: inline-start;
-        width: 10%;
-        text-align: center;
+        width: 25%;
         transition: all 0.3s ease;
         color: green;
         font-size: 8px;
-        margin-right: 2px;
+        
     }
 
-    .social-media a:hover {
+    #social-media a:hover {
         background-color: white;
     }
 
-    .active {
+    #active {
         background-color: #04AA6D;
     }
 
@@ -401,7 +433,7 @@ iframe {
 
 }
 
-/*--------------------------- Media Queries - 768px max - Tablet/Ipad sreen*------------------------------------------------/
+/*--------------------------- Media Queries - 768px max - Tablet/Ipad sreen*------------------------------------------------*/
 
 @media (max-width: 768px) {
     .hero-image {
