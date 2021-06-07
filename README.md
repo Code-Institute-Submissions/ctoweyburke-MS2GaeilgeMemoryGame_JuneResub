@@ -1,6 +1,6 @@
 # **Learn Gaeilge for Primary School**
 
-![Mockup image](wireframes/contacthtml.jpg)
+![Mockup image](wireframes/index-homehtml.jpg)
 
 [View live version of website via GitHub Pages](https://ctoweyburke.github.io/MS2GaeilgeMemoryGame/)
 
@@ -150,19 +150,21 @@ feel that this website would be used more by a teacher on a whiteboard - so desk
 ## **Features**
 - Three Page Site with Home Page, Game Page and Get in touch Page.
 - This site is designed to be used as a desktop by a teacher in a class so my main design was desktop, then i decided to make it ipad
-responsive also. 
+responsive also and iphone. 
 
 ### Home Page  (Index.html)
-1. Logo - if clicked/ tapped - return to Index.html (Home Page)
-2. Mobile & Tablet - webpages re-size down to fit device.
-3. Desktop - Large screen - User can see 3 pages - Home/Game/Get in touch.
-4. Home Page - Clear instructions to learn the words. Game & Get in touch Button on Screen along with Social Media Links
-5. Large Picture with key words and pictures to aid learners. 
+
+1. Mobile & Tablet - webpages re-size down to fit device.
+2. Desktop - Large screen - User can see 3 pages - Home/Game/Get in touch.
+3. Home Page - Clear instructions to learn the words. Game & Get in touch Button on Screen along with Social Media Links
+4. Large Picture with key words and pictures to aid learners. 
+5. Social Media links at bottom - font Awesome icons - easily understood.
 
 ### Game (game.html)
-1. User can click on the START GAME button to start the timer and the game.
+1. User MUST click on the START GAME button to start the timer and the game. This is why this text is flashing so that 
+it drawas the users attention. 
 2. Cards are locked and will only turn when the START button is clicked.
-3. Instructions are given to the user to click on the start button to start the game.
+3. Instructions are given to the user to click on the start button to start the game - flashing text.
 4. A reset button is also available for users to reset if they want to start the game again.
 5. An message will appear when the user matches all the cards to give them information on the time it has taken them, and 
 how many flips also. 
@@ -170,20 +172,20 @@ how many flips also.
 ### Get in Touch (Contact.html) 
 1. A form is available on this page for the user to get in touch.
 2. There is a space for name, email and a message to be submitted.
-3. A submit button is available, and when you click on this an alert message will appear to tell you that you have submitted a message.
-4. A map is also available with the region where this (fictional) company is
+3. A submit button is available. 
+4. Company information, contact email and phone number along with some info on the company (fictional)
+5. A map is also available with the region where this (fictional) company is located - with marker for head office. 
 
 
 <a></a>
 ### **Existing Features**
-#### Header
-- Logo - Allows the user to easily recognise the brand of “Ireland-Gaeilge”. 
-- If the user clicks on the logo, it will return the users to the “Home” section as they would expect. 
-- Also, in header area – Social Media Links to “Gaeilge Vibe” which is an Irish Language area (use for Educational Purpose for this project only)
+#### Pages
 - Navigation Bar - Allows the user to easily navigate the website's sections and find what they are looking for with ease and speed.
 - Game Page - Allows the user to go directly to the game and play.
 - Get in Touch Page - Allow user to see fill in a contact form to send feedback or ask questions. 
 - Also, a map on this page to show the location of the company. (as it is not a real company – location map is regional)
+- Social Media Links to “Gaeilge Vibe” which is an Irish Language area (use for Educational Purpose for this project only)
+- Hamburger menu when using phone 
 
 <a></a>
 ### **Features to be implemented**
