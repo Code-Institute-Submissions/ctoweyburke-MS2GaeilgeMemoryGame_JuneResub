@@ -231,62 +231,11 @@ how many flips also.
 <a></a>
 ## **Testing**
 
-<a name="Testing"></a>
-
-
-### Bugs
-
-Images displaying incorrectly on smaller screen sizes.
-- Created custom image sizes at different screen sizes using media queries, also centred the images. Images look fine on a mobile device but not on a laptop looking at mobile size.
-
-Cards were not fliping.
-- Ensured there were no typos or spelling errors within the game.html file or style.css. Fixed. 
-
-Cards were not shuffling after each game.
-- After each game idea is for cards to suffle - so they find a new space. There was a typo - fixed. 
-
-Game start - need to instruct more to start.
-- Used flashing text to gain the users attention when trying to play the game.
-
-Contact From.
-- Set up alert for the form to identify when it has been sumbitted or if there were any errors. This was a link I could not fix.
-
-
-### Nav Bar
-- Checked that all links work correctly, taking the user to the desired page.
-- Hamburger bar appears when the screen size is small - mobile responsive.
-
-### Cards
-- Check that upon clicking each card separately the information is correct and the card flips.
-- Layout remains correct even when displaying assets.
-
-### Contact Us
-- Both links work and submit correctly.
-- Name, email and message option. 
-- Email validation works, only email addresses are allowed to be submitted.
-
-### Devices
--
-- Galaxy S20: Works as intended.
-- I phone 6: Works as intended.
-- 
-- I Pad:  Works as intended.
-- Small screen laptop: Works as intended.
-- Large screen laptop: Works as intended.
-- Desktop:  Works as intended.
-
-### Browsers 
-- Firefox: Working as intended no errors.
-- Microsoft Edge: Working as intended no errors.
-- Chrome: Working as intended no errors.
-- Safari: Working as intended no errors.
-
 For this project, the web developer tools built directly into the Google Chrome browser was used to help edit pages 
 and diagnose problems quickly.
 - [W3C Markup Validator](https://validator.w3.org/) 
 Results - 
-(testing/index-homehtml.validatorw3results.jpg)
-(testing/gamehtml.validatorw3results.jpg)
+(testing/validatorw3results.jpg)
     - For testing HTML code - some issues noted and addressed.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
     - For testing CSS code
@@ -305,6 +254,8 @@ Results -
 - Lighthouse in Google dev tool
     - For testing the performance of the website
     Results - (testing/lighthousetest.jpg)
+
+
 
 
 <a></a>

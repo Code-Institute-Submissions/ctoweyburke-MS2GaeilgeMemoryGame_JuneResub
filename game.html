@@ -33,88 +33,87 @@
 
     <div class="container-fluid">
     
-    <div class="row">
-      <div class="col-sm-4" id="game-buttons">
-          
-                <h5 id="game-instructions"> Click on the start button below!!</h5>
-                <button type="button" onclick="startGame()" class="btn btn-dark btn-lg">START GAME</button>
-                <button type="button" onclick="resetGame()" class="btn btn-warning btn-lg">RESET GAME</button>
-                <h4 class="game-results">Timer = <label id="timer">0</label></h4>
-                <h4 class="game-results">Flips =<label id="flips">0</label></h4>
-                <h4 class="game-results">Matched cards = <label id="matched">0</label></h4>
-                <h4 id="finished_messsage" class="finished_messsage"></h4>
+        <div class="row">
+            <div class="col-sm-4" id="game-buttons">
                 
+                        <h5 id="game-instructions"> Click on the start button below!!</h5>
+                        <button type="button" onclick="startGame()" class="btn btn-dark btn-lg">START GAME</button>
+                        <button type="button" onclick="resetGame()" class="btn btn-warning btn-lg">RESET GAME</button>
+                        <h4 class="game-results">Timer = <label id="timer">0</label></h4>
+                        <h4 class="game-results">Flips =<label id="flips">0</label></h4>
+                        <h4 class="game-results">Matched cards = <label id="matched">0</label></h4>
+                            
+            </div>
+
+            <span id="finished_messsage"></span>
+
+            <div class="col-sm-8" >
+                    <section class="memory-game" >
+                        <div class="memory-card" data-framework="books">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/books.jpg" alt="books" />
+                        </div>
+
+                        <div class="memory-card" data-framework="books">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/books.jpg" alt="books" />
+                        </div>
+
+                        <div class="memory-card" data-framework="clog">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
+                        </div>
+
+                        <div class="memory-card" data-framework="clog">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
+                        </div>
+
+                        <div class="memory-card" data-framework="doras">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
+                        </div>
+
+                        <div class="memory-card" data-framework="doras">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
+                        </div>
+
+                        <div class="memory-card" data-framework="lunchbox">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
+                        </div>
+
+                        <div class="memory-card" data-framework="lunchbox">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
+                        </div>
+
+                        <div class="memory-card" data-framework="muinteoir">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
+                        </div>
+
+                        <div class="memory-card" data-framework="muinteoir">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
+                        </div>
+
+                        <div class="memory-card" data-framework="pencil">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
+                        </div>
+
+                        <div class="memory-card" data-framework="pencil">
+                            <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
+                            <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
+                        </div>
+
+                    </section>    
+            </div>
         </div>
-
-    <div class="col-sm-8" class="memory-game">
-            <section class="memory-game">
-                <div class="memory-card" data-framework="books">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/books.jpg" alt="books" />
-                </div>
-
-                <div class="memory-card" data-framework="books">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/books.jpg" alt="books" />
-                </div>
-
-                <div class="memory-card" data-framework="clog">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
-                </div>
-
-                <div class="memory-card" data-framework="clog">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/clog.jpg" alt="clog" />
-                </div>
-
-                <div class="memory-card" data-framework="doras">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
-                </div>
-
-                <div class="memory-card" data-framework="doras">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/doras.jpg" alt="doras" />
-                </div>
-
-                <div class="memory-card" data-framework="lunchbox">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
-                </div>
-
-                <div class="memory-card" data-framework="lunchbox">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/lunchbox.jpg" alt="lunchbox" />
-                </div>
-
-                <div class="memory-card" data-framework="muinteoir">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
-                </div>
-
-                <div class="memory-card" data-framework="muinteoir">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/muinteoir.jpg" alt="muinteoir" />
-                </div>
-
-                <div class="memory-card" data-framework="pencil">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
-                </div>
-
-                <div class="memory-card" data-framework="pencil">
-                    <img class="back-face" src="assets/images/scoil.jpg" alt="school" />
-                    <img class="front-face" src="assets/images/pencil.jpg" alt="pencil" />
-                </div>
-
-                
-        </div>
-
-            
     </div>
     
-    </section>
     
     <div class="container-fluid" id="social-media">
         <h6 style="color:green">GAEILGE VIBES <br> Follow on Social Media</h6>
@@ -126,5 +125,4 @@
     </div>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>

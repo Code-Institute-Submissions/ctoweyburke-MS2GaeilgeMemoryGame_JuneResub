@@ -87,8 +87,8 @@ h2 {
 #social-media {
     background-color: orange;
     width: 100%;
-    
-    
+
+
 }
 
 h6 {
@@ -137,13 +137,13 @@ h6 {
 
 .memory-card {
     width: calc(25% - 10px);
-    height: cacl(33.333% - 10px);
+    height: cacl(33.333% -10px);
     margin: 5px;
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 3);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 }
 
 .memory-card:active {
@@ -159,15 +159,30 @@ h6 {
     font-family: cursive;
     font-size: 30px;
     font-style: italic;
-    
-    animation:blinkingText 1.2s infinite;
+
+    animation: blinkingText 1.2s infinite;
 }
-@keyframes blinkingText{
-    0%{     color: #000;    }
-    49%{    color: green; }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: #000;    }
+
+@keyframes blinkingText {
+    0% {
+        color: #000;
+    }
+
+    49% {
+        color: green;
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    99% {
+        color: transparent;
+    }
+
+    100% {
+        color: #000;
+    }
 }
 
 .game-results {
@@ -197,7 +212,7 @@ h6 {
     padding-bottom: 10%;
 }
 
-  /* Pop up message when finished playing the game*/
+/* Pop up message when finished playing the game*/
 
 #finished_messsage {
     font-family: cursive;
@@ -205,7 +220,7 @@ h6 {
     font-stretch: expanded;
     padding-top: 20px;
     font-weight: 300;
-
+    font-size: 30px;
 }
 
 /* Get in touch page */
@@ -213,12 +228,12 @@ h6 {
 form {
     background-color: grey;
     box-shadow: 0px 0px 5px 0px #ffffff;
-    padding: 20px 20px 20px;
+    padding: 10px 10px 10px;
     margin-bottom: 10px;
-    border-radius: 10%;
+    border-radius: 5%;
     font-family: cursive;
     margin-top: 25px;
-    display: inline-flexbox;
+    display: flexbox;
     text-align: center;
 }
 
@@ -227,13 +242,13 @@ label {
     font-weight: 400;
     color: orange;
     margin-bottom: 5px;
-      }
+}
 
 #submit-button {
     padding: 5px;
     font-size: 20px;
-    background: orange;
-    border: 1px solid orange;
+    background: #ffa500;
+    border: 1px solid;
     border-radius: 20px;
     transition: all 2s;
 }
@@ -270,6 +285,7 @@ p {
 /* -------------------------------Media Queries 425 pxl max - I-Phone 6 and up ------------------------*/
 
 @media (max-width: 450px) {
+
     /* header toggle button*/
     .toggle-button {
         display: flex;
@@ -321,7 +337,8 @@ p {
         font-weight: 400;
         font-family: cursive;
     }
-      /* main image on home/index.html page*/
+
+    /* main image on home/index.html page*/
     .hero-image {
         width: 90%;
         height: 200px;
@@ -340,7 +357,8 @@ p {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-      /* Social Media */
+
+    /* Social Media */
     #social-media {
         width: 100%;
         overflow: auto;
@@ -356,7 +374,7 @@ p {
         transition: all 0.3s ease;
         color: green;
         font-size: 8px;
-        
+
     }
 
     #social-media a:hover {
@@ -366,7 +384,8 @@ p {
     #active {
         background-color: #04AA6D;
     }
-      /* game css*/
+
+    /* game css*/
     .memory-game {
         width: 350px;
         height: 200px;
@@ -378,13 +397,13 @@ p {
 
     .memory-card {
         width: calc(25% - 40px);
-        height: cacl(33.333% - 80px);
+        height: cacl(33.333% -80px);
         margin: 2px;
         position: relative;
         transform: scale(1);
         transform-style: preserve-3d;
         transition: transform .5s;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 3);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
     }
 
     .memory-card:active {
@@ -404,7 +423,6 @@ p {
         position: absolute;
         border-radius: 2px;
         background: orange;
-        color: orange;
         backface-visibility: hidden;
     }
 
@@ -438,10 +456,11 @@ p {
 
     #finished_messsage {
         font-family: cursive;
-        color: red;
+        color: #000000;
         font-stretch: expanded;
         padding-top: 20px;
-        font-weight: 300;
+        font-weight: 400;
+        font-size: 24px;
     }
 
     #contact-form {
@@ -454,7 +473,7 @@ p {
 
     #map {
         width: 100%;
-        
+
     }
 
 }
@@ -509,12 +528,13 @@ p {
     .active {
         background-color: #04AA6D;
     }
+
     #map {
-    margin-top: 20px;
-    height: 400px;
-    width: 90%;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    
-}
+        margin-top: 20px;
+        height: 400px;
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+
+    }
 }
